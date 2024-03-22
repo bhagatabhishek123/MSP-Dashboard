@@ -1,5 +1,6 @@
 import Iframe from "react-iframe";
 
+// Displaying the looker data througth Iframe
 const Looker = () => {
   return (
     <div className="">
