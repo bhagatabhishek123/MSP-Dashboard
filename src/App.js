@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Iframe from "react-iframe";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Login } from "./components/Login";
+import Looker from "./components/Looker";
+import { Register } from "./components/Register";
+import Dashboard from "./components/Dashboard";
+import Freshdesk from "./components/Freshdesk";
+// import Freshdesk from "./Solutions/Freshdesk";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/looker" element={<Looker />} />
+            <Route path="/freshdesk" element={<Freshdesk />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

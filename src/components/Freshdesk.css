@@ -1,0 +1,79 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+} 
+
+.freshdesk-body{
+    background-image: url("../images/Infinity 5.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.freshdesk-body .navbar{
+    /* background-color:#241c24; */
+    height: 82px;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+
+
+.freshdesk-body .navbar-brand{
+    margin-left: 25px;
+    padding: 4px;
+    color:white;
+}
+
+.freshdesk-dashboard{
+    width: 100%;
+    height: 86vh;
+    /* background-color:#241c24; */
+    display: flex;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+  
+
+}
+
+.freshdesk-dashboard .column{
+    width: 350px;
+    height: 475px;
+    background-color:white;
+    margin-top: 20px;
+    overflow: auto;
+    opacity: 0.9;
+    
+}
+
+.freshdesk-dashboard h2{
+    text-align: center;
+    border-bottom: 1px dashed black;
+    padding: 10px;
+    color: black;
+  }
+
+ .freshdesk-dashboard .list{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color:white;
+
+}
+
+.freshdesk-dashboard .column .list{
+    opacity: 1 !important;
+}
+
+  .freshdesk-dashboard .list:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    
+  }
+
+  .freshdesk-dashboard .card-header{
+    display: flex;
+    justify-content:space-between;
+  }
