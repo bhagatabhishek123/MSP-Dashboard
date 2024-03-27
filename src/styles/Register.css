@@ -1,0 +1,112 @@
+.App {
+    text-align: center;
+    background-image: url('../images/Infinity\ 5.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .auth-register-form-container{
+    width: 420px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: #fff;
+    padding: 30px 40px;
+  
+  }
+
+  .auth-register-form-container .h1{
+    font-size: 36px;
+    text-align: center;
+  
+  }
+
+  .auth-register-form-container .register-input-box{
+    width: 100%;
+    height: 40px;
+    margin:40px 0px;
+  }
+
+
+  .auth-register-form-container input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255,255,0.2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+  
+    
+  }
+
+  
+.auth-register-form-container input::placeholder{
+    color: #fff;
+    opacity: .5;
+  }
+  
+  .auth-register-form-container .register-login-btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .auth-register-form-container .register-link-btn{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 20px 0 15px;
+  }
+  
+  
+  .auth-register-form-container .login-btn2{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    margin-top: -10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .auth-register-form-container .link-btn2{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 20px 0 15px;
+  }

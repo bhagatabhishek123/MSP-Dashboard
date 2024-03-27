@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "../App.css";
+// import "../App.css";
+import "../styles/Register.css";
 import { useNavigate } from "react-router-dom";
-
+import vertical_logo from "../images/persistent_logo.png";
 //Register here
 
 export const Register = () => {
@@ -23,40 +24,49 @@ export const Register = () => {
 
   return (
     <div className="App">
-      <div className="auth-form-container">
-        <h1 className="rh2">Register</h1>
-        <form className="login-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Full Name</label>
-          <input
-            value={name}
-            name="name"
-            onChange={(e) => setName(e.target.value)}
-            id="name"
-            placeholder="Full Name"
-          />
-          <label htmlFor="email">Email</label>
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="Email"
-            placeholder="youremail@gmail.com"
-            id="email"
-            name="email"
-          />
-          <label htmlFor="password">Password</label>
-          <input
-            value={pass}
-            onChange={(e) => setPass(e.target.value)}
-            type="password"
-            placeholder="********"
-            id="password"
-            name="password"
-          />
-          <button className="login-btn2" type="submit">
+      <div className="auth-register-form-container">
+        <img
+          className="persistent_vertical"
+          src={vertical_logo}
+          alt="Icon 3"
+          style={{ width: "16ch", margin: "auto", marginBottom: "25px" }}
+        />
+        <h1 className="h1">Register</h1>
+        <form className="register-form" onSubmit={handleSubmit}>
+          <div className="register-input-box">
+            <input
+              value={name}
+              name="name"
+              onChange={(e) => setName(e.target.value)}
+              id="name"
+              placeholder="Full Name"
+            />
+          </div>
+          <div className="register-input-box">
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="Email"
+              placeholder="Email ID"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div className="register-input-box">
+            <input
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <button className="register-login-btn" type="submit">
             Register
           </button>
         </form>
-        <button className="link-btn2" onClick={() => navigate("/")}>
+        <button className="register-link-btn" onClick={() => navigate("/")}>
           Already have an account? Login here.
         </button>
       </div>

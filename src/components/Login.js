@@ -69,7 +69,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-import vertical_logo from "../images/vertical_logo.png";
+import vertical_logo from "../images/persistent_logo.png";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -99,29 +99,33 @@ export const Login = () => {
           className="persistent_vertical"
           src={vertical_logo}
           alt="Icon 3"
-          style={{ width: "10ch", margin: "auto", marginBottom: "15px" }}
+          style={{ width: "16ch", margin: "auto", marginBottom: "25px" }}
         />
 
-        <h1 className="h2">Login</h1>
+        <h1 className="h1">Login</h1>
         <form className="login-form" onSubmit={handleSubmit}>
-          <label htmlFor="email">Email</label>
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            placeholder="youremail@gmail.com"
-            id="email"
-            name="email"
-          />
-          <label htmlFor="password">Password</label>
-          <input
-            value={pass}
-            onChange={(e) => setPass(e.target.value)}
-            type="password"
-            placeholder="********"
-            id="password"
-            name="password"
-          />
+          {/* <label htmlFor="email">Email</label> */}
+          <div className="input-box">
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              placeholder="Email ID"
+              id="email"
+              name="email"
+            />
+          </div>
+          {/* <label htmlFor="password">Password</label> */}
+          <div className="input-box">
+            <input
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+            />
+          </div>
           <button className="login-btn" type="submit">
             Log In
           </button>

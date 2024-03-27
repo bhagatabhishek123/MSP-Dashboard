@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Freshdesk.css";
+import "../styles/Freshdesk.css";
 
 const initialTasks = {
   todo: ["Task 1", "Task 2", "Task 3"],

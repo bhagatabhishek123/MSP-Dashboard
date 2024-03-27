@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Infinity from "../images/Infinity.png";
 
 import { Link } from "react-router-dom";
-import "./Dashboard.css";
+import "../styles/Dashboard.css";
 const Dashboard = (props) => {
   console.log(props);
   return (
