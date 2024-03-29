@@ -4,7 +4,6 @@ import Infinity from "../images/Infinity.png";
 import { Link } from "react-router-dom";
 import "../styles/Dashboard.css";
 const Dashboard = (props) => {
-  console.log(props);
   return (
     <div className="dashboard">
       <nav className="navbar navbar-light">
